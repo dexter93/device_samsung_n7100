@@ -52,8 +52,6 @@ PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-client-sap
 
-#    SamsungServiceMode
-
 # NFC
 PRODUCT_PACKAGES += \
     nfc.exynos4 \
@@ -80,7 +78,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Enhanced NFC
+$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
