@@ -95,6 +95,6 @@
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <!-- Boolean to enable stylus gestures -->
-    <!--<bool name="config_stylusGestures">true</bool>-->
+    <bool name="config_stylusGestures">true</bool>
 
 </resources>
