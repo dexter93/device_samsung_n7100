@@ -1,5 +1,8 @@
 #!/system/bin/sh
 
+# CPU Init
+echo "200000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+
 # I/O Shed.
 echo "noop [row]" > /sys/block/mmcblk0/queue/scheduler
 
