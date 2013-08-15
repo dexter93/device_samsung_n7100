@@ -21,8 +21,7 @@ $(call inherit-product, vendor/slim/config/common_ledflash.mk)
 $(call inherit-product, vendor/slim/config/common_sgs.mk)
 
 PRODUCT_COPY_FILES +=  \
-    vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip \
-    device/samsung/n7100/69cpuinit:system/etc/init.d/69cpuinit
+#    device/samsung/n7100/69cpuinit:system/etc/init.d/69cpuinit
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7100
