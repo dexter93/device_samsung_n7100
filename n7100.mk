@@ -46,7 +46,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DeviceSettings \
     libsecril-client \
-    libsecril-client-sap
+    libsecril-client-sap \
+    SamsungServiceMode
 
 # NFC
 PRODUCT_PACKAGES += \

@@ -17,9 +17,6 @@ $(call inherit-product, device/samsung/n7100/full_n7100.mk)
 # Inherit torch settings
 $(call inherit-product, vendor/slim/config/common_ledflash.mk)
 
-# Inherit device settings
-$(call inherit-product, vendor/slim/config/common_sgs.mk)
-
 PRODUCT_COPY_FILES +=  \
 #    device/samsung/n7100/69cpuinit:system/etc/init.d/69cpuinit
 
