@@ -32,6 +32,22 @@ TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := slim_n7100_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
+# Selinux
+BOARD_SEPOLICY_DIRS := \
+    device/samsung/n7100/selinux
+
+BOARD_SEPOLICY_UNION := \
+    device.te \
+    domain.te \
+    file.te \
+    file_contexts \
+    init.te \
+    mediaserver.te \
+    rild.te \
+    system.te \
+    ueventd.te \
+    wpa_supplicant.te
+
 # assert
 TARGET_OTA_ASSERT_DEVICE := t03g,n7100,GT-N7100
 
