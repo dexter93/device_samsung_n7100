@@ -4,6 +4,7 @@ on init
     mkdir /dev/pipes 0771 shell shell
 
 on post-fs-data
+    chown system system /dev/tzic
     chown radio system /sys/devices/platform/samsung-pd.5/s3c-fimc.2/range_mode
     chmod 0660 /sys/devices/platform/samsung-pd.5/s3c-fimc.2/range_mode
 
@@ -39,13 +40,6 @@ on post-fs-data
     restorecon /efs/wifi/.mac.info
 
 on boot
-
-# icd
-service icd /system/bin/icd
-    class main
-    user system
-    group system log
-    onrestart exec icd_check
 
 # cbd
 service cpboot-daemon /sbin/cbd -d -p 10
