@@ -48,6 +48,9 @@ BOARD_SEPOLICY_UNION := \
     ueventd.te \
     wpa_supplicant.te
 
+# Camera Hal Support
+TARGET_PROVIDES_CAMERA_HAL := true
+
 # assert
 TARGET_OTA_ASSERT_DEVICE := t03g,n7100,GT-N7100
 
