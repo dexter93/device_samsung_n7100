@@ -33,7 +33,7 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/slim/config/common.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # This is where we'd set a backup provider if we had one
 $(call inherit-product, device/samsung/n7100/n7100.mk)
