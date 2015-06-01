@@ -54,7 +54,7 @@ service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     group system inet sdcard_rw
 
 # MobiCore startup
-service mobicore /system/bin/mcDriverDaemon -r /system/vendor/secapp/FFFFFFFF000000000000000000000001.drbin
+service mobicore /system/bin/mcDriverDaemon -r /system/vendor/secapp/FFFFFFFF000000000000000000000001.drbin -r /system/vendor/secapp/ffffffffd0000000000000000000000a.tlbin
     setenv MC_REGISTRY_PATH /system/vendor/secapp
     user drmrpc
     group drmrpc
