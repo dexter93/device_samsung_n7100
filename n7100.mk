@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mcDriverDaemon
 
+# Keymaster
+PRODUCT_PACKAGES += \
+   keystore.exynos4
+
 PRODUCT_COPY_FILES += \
     packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
